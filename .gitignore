@@ -5,3 +5,7 @@
 .DS_Store
 .quarto
 inst/doc
+data/bvbrc_clean.csv
+data/meta_full_clean.tsv
+data/names.dmp
+data/nodes.dmp
