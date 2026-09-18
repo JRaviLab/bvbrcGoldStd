@@ -1,0 +1,37 @@
+#' Cleaned BV-BRC country/location strings
+#'
+#' Raw country/location strings from BV-BRC's `isolation_country` /
+#' `geographic_location` fields, mapped to a clean country name and ISO3
+#' code where applicable, with flags for edge cases (subnational regions,
+#' geographic features, historical names, territories, multi-country
+#' entries).
+#'
+#' @format A data frame with 287 rows and 16 columns:
+#' \describe{
+#'   \item{raw_country}{Raw country/location string as it appears in BV-BRC.}
+#'   \item{n}{Number of source records carrying this raw value.}
+#'   \item{raw_entry}{Raw value as originally entered.}
+#'   \item{clean_name}{Cleaned country name, where resolvable.}
+#'   \item{iso3_code}{ISO 3166-1 alpha-3 country code.}
+#'   \item{short_name}{Short form of the cleaned name.}
+#'   \item{category}{One of country, subnational, sea, ocean, territory,
+#'     multiple, historical, geological, vague, continent, region,
+#'     sampling_site, unmatched, or missing.}
+#'   \item{is_valid_country}{Logical; TRUE if `clean_name` is a current,
+#'     internationally recognized country.}
+#'   \item{is_geographic_feature}{Logical; TRUE for seas, oceans, and
+#'     similar non-political geographic features.}
+#'   \item{is_multiple_countries}{Logical; TRUE if the raw value spans
+#'     more than one country.}
+#'   \item{is_historical}{Logical; TRUE for historical/former country names.}
+#'   \item{is_subnational}{Logical; TRUE for states, provinces, or
+#'     territories of a country.}
+#'   \item{is_territory}{Logical; TRUE for dependent territories.}
+#'   \item{requires_review}{Logical; TRUE if the mapping needs manual review.}
+#'   \item{data_quality_tier}{Confidence tier for the mapping: low,
+#'     medium, or high.}
+#'   \item{cleaning_notes}{Free-text note explaining the mapping.}
+#' }
+#' @source Derived from BV-BRC `isolation_country` / `geographic_location`
+#'   values. Legacy/reference layer, not yet a gold-standard table.
+"bvbrc_countries_clean"

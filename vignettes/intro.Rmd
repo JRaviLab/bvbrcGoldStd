@@ -15,6 +15,49 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(NewPackage)
-hello()
+library(bvbrcGoldStd)
+```
+
+All datasets below are cleaned, reviewed metadata loaded with
+`loadGoldStdData(dataset = ...)`. Source is BV-BRC by default; any other
+source (e.g. NCBI) is called out explicitly in the dataset name. See each
+folder's README for file-level detail:
+[`cleaned_hosts/`](https://github.com/JRaviLab/bvbrcGoldStd/blob/main/inst/extdata/cleaned_hosts/README.md),
+[`cleaned_isolationsource/`](https://github.com/JRaviLab/bvbrcGoldStd/blob/main/inst/extdata/cleaned_isolationsource/README.md),
+[`cleaned_drugs/`](https://github.com/JRaviLab/bvbrcGoldStd/blob/main/inst/extdata/cleaned_drugs/README.md),
+[`cleaned_geography/`](https://github.com/JRaviLab/bvbrcGoldStd/blob/main/inst/extdata/cleaned_geography/README.md).
+
+Wide tables are shown with `dplyr::glimpse()`; narrow ones with a
+`knitr::kable()` preview of the first few rows.
+
+## Hosts
+
+`host` is cross-checked against BV-BRC; `host_ncbi` is NCBI-only.
+
+```{r}
+dplyr::glimpse(loadGoldStdData("host"))
+dplyr::glimpse(loadGoldStdData("host_ncbi"))
+```
+
+## Isolation source
+
+```{r}
+knitr::kable(head(loadGoldStdData("isolation_source")))
+```
+
+## Drugs
+
+```{r}
+knitr::kable(head(loadGoldStdData("drug_class")))
+```
+
+## Geography
+
+`geography` reads the flat file; `bvbrc_countries_clean` is the same table
+as a lazy-loaded package dataset (`data(bvbrc_countries_clean)`,
+documented at `?bvbrc_countries_clean`).
+
+```{r}
+dplyr::glimpse(loadGoldStdData("geography"))
+dplyr::glimpse(bvbrc_countries_clean)
 ```
