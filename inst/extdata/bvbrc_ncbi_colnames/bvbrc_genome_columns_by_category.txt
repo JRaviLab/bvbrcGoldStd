@@ -1,0 +1,186 @@
+BV-BRC genome metadata fields, grouped by category
+Source: `p3-all-genomes -f` (BV-BRC CLI) -- 150 fields
+Categories from BV-BRC-Web (DataItemFormatter.js).
+[inferred] = placed by JRaviLab, not BV-BRC.
+*  = multi-valued        (ncbi) = cross-ref accession for pulling NCBI annotation
+
+General Info (4)
+    genome_id
+    genome_name
+    other_names  *
+    p2_genome_id  [inferred]
+
+Taxonomy Info (15)
+    class
+    common_name  [inferred]
+    family
+    genetic_code  [inferred]
+    genus
+    kingdom
+    order
+    organism_name  [inferred]
+    phylum
+    species
+    superkingdom
+    taxon_id
+    taxon_lineage_ids  *  [inferred]
+    taxon_lineage_names  *  [inferred]
+    taxonomy  [inferred]
+
+Status (1)
+    genome_status
+
+Type Info (30)
+    biovar
+    cgmlst_hc0  [inferred]
+    cgmlst_hc10  [inferred]
+    cgmlst_hc100  [inferred]
+    cgmlst_hc2  [inferred]
+    cgmlst_hc20  [inferred]
+    cgmlst_hc5  [inferred]
+    cgmlst_hc50  [inferred]
+    cgmlst_id  [inferred]
+    clade
+    collection_date_dr  [inferred]
+    culture_collection
+    h_type
+    h1_clade_global  *
+    h1_clade_us  *
+    h3_clade  *
+    h5_clade  *
+    lineage
+    mlst
+    n_type
+    other_typing  *
+    pathovar
+    ph1n1_like
+    reference_genome
+    segment  *
+    serovar
+    strain
+    subclade
+    subtype
+    type_strain
+
+Sequence Info (5)
+    assembly_method
+    sequencing_centers
+    sequencing_depth
+    sequencing_platform
+    sequencing_status
+
+Database Cross Reference (11)
+    assembly_accession  (ncbi)
+    authors
+    bioproject_accession  (ncbi)
+    biosample_accession  (ncbi)
+    completion_date
+    genbank_accessions  (ncbi)
+    ncbi_project_id  (ncbi)  [inferred]
+    publication
+    refseq_accessions  (ncbi)  [inferred]
+    refseq_project_id  (ncbi)  [inferred]
+    sra_accession  (ncbi)
+
+Genome Statistics (8)
+    chromosomes
+    contig_l50
+    contig_n50
+    contigs
+    gc_content
+    genome_length
+    plasmids
+    segments
+
+Annotation Statistics (16)
+    cds
+    cds_ratio
+    core_families
+    core_family_ratio
+    hypothetical_cds
+    hypothetical_cds_ratio
+    mat_peptide
+    missing_core_family_ids  *
+    partial_cds
+    partial_cds_ratio
+    patric_cds  [inferred]
+    plfam_cds
+    plfam_cds_ratio
+    refseq_cds  [inferred]
+    rrna
+    trna
+
+Genome Quality (8)
+    checkm_completeness
+    checkm_contamination
+    coarse_consistency
+    fine_consistency
+    genome_quality
+    genome_quality_flags  *
+    nearest_genomes  *
+    outgroup_genomes  *
+
+Isolate Info (17)
+    altitude  [inferred]
+    city  [inferred]
+    collection_date
+    collection_year
+    county  [inferred]
+    depth  [inferred]
+    geographic_group
+    geographic_location
+    isolation_comments
+    isolation_country
+    isolation_site  [inferred]
+    isolation_source
+    latitude  [inferred]
+    longitude  [inferred]
+    other_environmental  *
+    season
+    state_province
+
+Host Info (12)
+    body_sample_site  [inferred]
+    body_sample_subsite  [inferred]
+    host_age
+    host_common_name
+    host_gender
+    host_group
+    host_health
+    host_name
+    host_scientific_name  [inferred]
+    lab_host
+    other_clinical  *
+    passage
+
+Phenotype Info (11)
+    cell_shape
+    disease  *
+    gram_stain
+    habitat
+    motility
+    optimal_temperature
+    oxygen_requirement
+    phenotype  *
+    salinity
+    sporulation
+    temperature_range
+
+AMR (2)  [all inferred]
+    antimicrobial_resistance  *  [inferred]
+    antimicrobial_resistance_evidence  [inferred]
+
+Additional Info (4)
+    additional_metadata  *
+    comments  *
+    date_inserted
+    date_modified
+
+Administrative (6)  [all inferred]
+    _version_  [inferred]
+    owner  [inferred]
+    public  [inferred]
+    text  *  [inferred]
+    user_read  *  [inferred]
+    user_write  *  [inferred]
+
