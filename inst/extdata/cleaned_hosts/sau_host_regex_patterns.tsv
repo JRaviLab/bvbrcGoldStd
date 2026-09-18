@@ -1,0 +1,73 @@
+host_raw	host_clean	match_type
+food	food	substring
+cooked	food	substring
+retail	food	substring
+\bmeat\b	food	whole_word
+\bsalad\b	food	whole_word
+\bbaked\b	food	whole_word
+\bcheese\b	food	whole_word
+\bflour\b	food	whole_word
+\bbeans\b	food	whole_word
+\bmacaroni\b	food	whole_word
+soy product	food	substring
+cream pie	food	substring
+\bmeats\b	food	whole_word
+\bpork\b	food	whole_word
+\bair\b	environment	whole_word
+\bsoil\b	environment	whole_word
+environment	environment	substring
+\bsurface\b	environment	whole_word
+\bwater\b	environment	whole_word
+\bwall\b	environment	whole_word
+felis catus	cat	substring
+\bcat\b	cat	whole_word
+\bhuman\b	human	whole_word
+homo sapiens	human	substring
+homo-sapiens	human	substring
+\bgirl\b	human	whole_word
+\bboy\b	human	whole_word
+\bman\b	human	whole_word
+\bwoman\b	human	whole_word
+\bchild\b	human	whole_word
+\btrainee\b	human	whole_word
+\bworker\b	human	whole_word
+bos taurus	cow	substring
+\bbovine\b	cow	whole_word
+\bcattle\b	cow	whole_word
+\bcow\b	cow	whole_word
+\btaurus\b	cow	whole_word
+sus scrofa	pig	substring
+\bswine\b	pig	whole_word
+\bpig\b	pig	whole_word
+\bsus\b	pig	whole_word
+gallus gallus	chicken	substring
+\bchicken\b	chicken	whole_word
+gallas gallas domesticus	chicken	substring
+camelus dromedarius	camel	substring
+\bcamel\b	camel	whole_word
+canis lupus familiaris	dog	substring
+\bdog\b	dog	whole_word
+\bcanine\b	dog	whole_word
+equus ferus caballus	horse	substring
+equus caballus	horse	substring
+\bequine\b	horse	whole_word
+anas platyrhynchos domesticus	duck	substring
+\bduck\b	duck	whole_word
+\bmacaca\b	macaque	whole_word
+\bcapra\b	goat	whole_word
+\bgoat\b	goat	whole_word
+ovis aries	sheep	substring
+\bsheep\b	sheep	whole_word
+\bovine\b	sheep	whole_word
+bubalus bubalis	buffalo	substring
+\bbuffalo\b	buffalo	whole_word
+meleagris gallopavo	wild turkey	substring
+\blaboratory\b	lab	whole_word
+lab strain	lab	substring
+nist mixed microbial	lab	substring
+\bvole\b	rodent	whole_word
+rodent	rodent	substring
+mus musculus	rodent	substring
+\brattus\b	rodent	whole_word
+sciurus vulgaris	rodent	substring
+castor fiber	rodent	substring

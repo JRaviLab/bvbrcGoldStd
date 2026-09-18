@@ -1,7 +1,9 @@
-^NewPackage\.Rproj$
+^bvbrcGoldStd\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^README\.Rmd$
+^README\.html$
 ^cran-comments\.md$
 ^\.github$
 ^CODE_OF_CONDUCT\.md$
+^CONTRIBUTING\.md$
